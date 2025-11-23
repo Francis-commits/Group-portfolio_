@@ -218,6 +218,39 @@
       box-shadow: 0 20px 44px rgba(0,0,0,0.65);
     }
 
+.member-card {
+  background-color: #1e1e1e;
+  color: #ffd700;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.member-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-text h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.member-text p {
+  margin: 4px 0 0;
+  font-size: 0.9em;
+}
+
+.profile-pic {
+  width: 110px;
+  height: 110px;
+  border-radius: 10px; /* square with soft corners */
+  object-fit: cover;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
     .group-pic img {
       display: block;
       width: 100%;
@@ -582,36 +615,61 @@
     <div class="member-list-page">
       <label for="page-toggle" class="back-button"><i class="fas fa-arrow-left"></i> Back</label>
 
-      <div class="member-list-container" id="member-list-container">
-        <div class="team-grid">
+     <div class="member-list-container" id="member-list-container">
+  <div class="team-grid">
 
-          <div class="member-card" data-member-id="1">
-            <h3>Francis C. Erosa</h3>
-            <p>Leader</p>
-          </div>
-
-          <div class="member-card" data-member-id="2">
-            <h3>Marc Simon D. Naoe</h3>
-            <p>Member</p>
-          </div>
-
-          <div class="member-card" data-member-id="3">
-            <h3>Francis Dispo</h3>
-            <p>Member</p>
-          </div>
-
-          <div class="member-card" data-member-id="4">
-            <h3>Sean Harry B. Cepedoza</h3>
-            <p>Member</p>
-          </div>
-
-          <div class="member-card" data-member-id="5">
-            <h3>Kian Ashley Caoile</h3>
-            <p>Member</p>
-          </div>
-
+    <div class="member-card" data-member-id="1">
+      <div class="member-content">
+        <div class="member-text">
+          <h3>Francis C. Erosa</h3>
+          <p>Leader</p>
         </div>
+        <img src="erosa.jpeg" alt="Francis C. Erosa" class="profile-pic">
       </div>
+    </div>
+
+    <div class="member-card" data-member-id="2">
+      <div class="member-content">
+        <div class="member-text">
+          <h3>Marc Simon D. Naoe</h3>
+          <p>Member</p>
+        </div>
+        <img src="naoe.jpeg" alt="Marc Simon D. Naoe" class="profile-pic">
+      </div>
+    </div>
+
+    <div class="member-card" data-member-id="3">
+      <div class="member-content">
+        <div class="member-text">
+          <h3>Francis Dispo</h3>
+          <p>Member</p>
+        </div>
+        <img src="dispo.jpeg" alt="Francis Dispo" class="profile-pic">
+      </div>
+    </div>
+
+    <div class="member-card" data-member-id="4">
+      <div class="member-content">
+        <div class="member-text">
+          <h3>Sean Harry B. Cepedoza</h3>
+          <p>Member</p>
+        </div>
+        <img src="cepedoza.jpeg" alt="Sean Harry B. Cepedoza" class="profile-pic">
+      </div>
+    </div>
+
+    <div class="member-card" data-member-id="5">
+      <div class="member-content">
+        <div class="member-text">
+          <h3>Kian Ashley Caoile</h3>
+          <p>Member</p>
+        </div>
+        <img src="kian.jpeg" alt="Kian Ashley Caoile" class="profile-pic">
+      </div>
+    </div>
+
+  </div>
+</div>
 
          <div class="portfolio-detail-container">
 
@@ -620,129 +678,178 @@
                     <p>Click any member's name from the list on the left to display their details here.</p>
                 </div>
 
-                <div class="portfolio-detail" id="portfolio-1">
-                    <h3>Francis C. Erosa</h3>
-                    <span class="role-badge">Leader</span>
-                    <div class="intro-content">
-                        <div class="intro-picture-container">
-                            <img src="erosa.jpeg" alt="Profile picture of Francis C. Erosa">
-                        </div>
-                        <div class="intro-text-content">
-                            <p>I'm Francis C. Erosa, and I'm here as the Team Leader for Group 6. I'm excited to lead our team, blending artistic passion with digital know-how to deliver a great portfolio.</p>
-                        </div>
-                    </div>
-                    <h4>My Hobbies, Interests, and Skills</h4>
-                    <ul>
-                        <li>Reading science fiction novels</li>
-                        <li>Painting</li>
-                        <li>Computer Literacy</li>
-                        <li>Music</li>
-                    </ul>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/1ZdJSUAr8k/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/tantan__ig?igsh=NHBobnN0ZzZuYWl6" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@eros____0?_t=ZS-90z1MKrJ4qe&_r=1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
+               <div class="portfolio-detail" id="portfolio-1">
+  <h3>Francis C. Erosa</h3>
+  <span class="role-badge">Leader</span>
+  <div class="intro-content">
+    <div class="intro-picture-container">
+      <img src="erosa.jpeg" alt="Profile picture of Francis C. Erosa">
+    </div>
+    <div class="intro-text-content">
+      <p>I'm Francis C. Erosa, and I'm here as the Team Leader for Group 6. I'm excited to lead our team, blending artistic passion with digital know-how to deliver a great portfolio.</p>
+      <ul class="personal-info">
+        <li><strong>Number:</strong> 09936062062</li>
+        <li><strong>Age:</strong> 19</li>
+        <li><strong>Birthdate:</strong> 12/29/2005</li>
+        <li><strong>Email:</strong> <a href="mailto:francis.erosa@example.com">erosafrancis7@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <h4>My Hobbies, Interests, and Skills</h4>
+  <ul>
+    <li>Reading science fiction novels</li>
+    <li>Painting</li>
+    <li>Computer Literacy</li>
+    <li>Music</li>
+  </ul>
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1ZdJSUAr8k/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/tantan__ig" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@eros____0" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+</div>
 
-                <div class="portfolio-detail" id="portfolio-2">
-                    <h3>Marc Simon D. Naoe</h3>
-                    <span class="role-badge">Member</span>
-                    <div class="intro-content">
-                        <div class="intro-picture-container">
-                            <img src="naoe.jpeg" alt="Profile picture of Marc Simon D. Naoe">
-                        </div>
-                        <div class="intro-text-content">
-                            <p>Hello, I'm Marc Simon D. Naoe, a dedicated Member of this group. This page represents who I am and what I'm passionate about as a contributor.</p>
-                        </div>
-                    </div>
-                    <h4>My Hobbies, Interests, and Skills</h4>
-                    <ul>
-                        <li>Basketball</li>
-                        <li>Listening to Music</li>
-                        <li>Playing Guitar</li>
-                        <li>Biking</li>
-                    </ul>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/marcsimon.naoe" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/agaisjvhi?igsh=N2lkamhmemtoMXk4&utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@agaisjvh?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
+<div class="portfolio-detail" id="portfolio-2">
+  <h3>Marc Simon D. Naoe</h3>
+  <span class="role-badge">Member</span>
+  <div class="intro-content">
+    <div class="intro-picture-container">
+      <img src="naoe.jpeg" alt="Profile picture of Marc Simon D. Naoe">
+    </div>
+    <div class="intro-text-content">
+      <p>Hello, I'm Marc Simon D. Naoe, a dedicated Member of this group. This page represents who I am and what I'm passionate about as a contributor.</p>
+      <ul class="personal-info">
+        <li><strong>Number:</strong> 09940134544</li>
+        <li><strong>Age:</strong> 19</li>
+        <li><strong>Birthdate:</strong> 04/20/2006</li>
+        <li><strong>Email:</strong> <a href="mailto:marc.naoe@example.com">nmarcsimon@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <h4>My Hobbies, Interests, and Skills</h4>
+  <ul>
+    <li>Basketball</li>
+    <li>Listening to Music</li>
+    <li>Playing Guitar</li>
+    <li>Biking</li>
+  </ul>
+  <div class="social-links">
+    <a href="https://www.facebook.com/marcsimon.naoe" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/agaisjvhi" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@agaisjvh" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+</div>
 
-                <div class="portfolio-detail" id="portfolio-3">
-                    <h3>Francis Dispo</h3>
-                    <span class="role-badge">Member</span>
-                    <div class="intro-content">
-                        <div class="intro-picture-container">
-                            <img src="dispo.jpeg" alt="Profile picture of Francis Dispo">
-                        </div>
-                        <div class="intro-text-content">
-                            <p>My name is Francis Dispo, and I serve as a committed Member. Feel free to explore my interests, from music to reading.</p>
-                        </div>
-                    </div>
-                    <h4>My Hobbies, Interests, and Skills</h4>
-                    <ul>
-                        <li>Playing Basketball</li>
-                        <li>Playing Guitar</li>
-                        <li>Singing</li>
-                        <li>Books</li>
-                    </ul>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/1FwhPxvsjb/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/frncsdspo?igsh=aXdrbzBwMWRvaG15&utm_source=qr&fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExYUt6TWN4TVlxbzBjSnNvWQEe4ITAVYQ0xAQUOpW-HT5ta2-SBmC7ElYQtRS8EFwTq6Mc1Y9sp9VrMZq7HIg_aem_U_kXrbUw08yKOoai9I-5pQ" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="http://www.tiktok.com/@__tmbng?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExYUt6TWN4TVlxbzBjSnNvWQEe80bxqbv2xBRZ7WPWoxqLSMMR3uGYVNsjLfwdEBZ3AkLxS4csdKECjyqO4bk_aem_cpumoyhPONnKE0WA1VNYeQ" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
+<div class="portfolio-detail" id="portfolio-3">
+  <h3>Francis Dispo</h3>
+  <span class="role-badge">Member</span>
+  <div class="intro-content">
+    <div class="intro-picture-container">
+      <img src="dispo.jpeg" alt="Profile picture of Francis Dispo">
+    </div>
+    <div class="intro-text-content">
+      <p>My name is Francis Dispo, and I serve as a committed Member. Feel free to explore my interests, from music to reading.</p>
+      <ul class="personal-info">
+        <li><strong>Number:</strong> 09772643252</li>
+        <li><strong>Age:</strong> 20</li>
+        <li><strong>Birthdate:</strong> 05/13/2005</li>
+        <li><strong>Email:</strong> <a href="mailto:francis.dispo@example.com">louesse13@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <h4>My Hobbies, Interests, and Skills</h4>
+  <ul>
+    <li>Playing Basketball</li>
+    <li>Playing Guitar</li>
+    <li>Singing</li>
+    <li>Books</li>
+  </ul>
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1FwhPxvsjb/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/frncsdspo" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="http://www.tiktok.com/@__tmbng" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+</div>
 
-                <div class="portfolio-detail" id="portfolio-4">
-                    <h3>Sean Harry B. Cepedoza</h3>
-                    <span class="role-badge">Member</span>
-                    <div class="intro-content">
-                        <div class="intro-picture-container">
-                            <img src="Cepedoza.jpeg" alt="Profile picture of Sean Harry B. Cepedoza">
-                        </div>
-                        <div class="intro-text-content">
-                            <p>I'm Sean Harry B. Cepedoza, and I'm glad to be a Member contributing to our portfolio. I enjoy both online gaming and outdoor sports like volleyball.</p>
-                        </div>
-                    </div>
-                    <h4>My Hobbies, Interests, and Skills</h4>
-                    <ul>
-                        <li>Playing online games</li>
-                        <li>Playing Volleyball</li>
-                        <li>Singing</li>
-                        <li>Sleeping</li>
-                    </ul>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/15qVpKk4v9/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/nshr_kai?igsh=MTE2MXhlbzE2NDNmcw%3D%3D&fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExYUt6TWN4TVlxbzBjSnNvWQEeIKQiP97Ooob6GESBJmmTg8SuhcdAsy6TjeRpMVGo-ibaF1xyJArYYAK-CIc_aem_AjAHo6ZYXQlMGPN7YOEIbw" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@nashiro011?_t=ZS-90ydnp8DyNO&_r=1&fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExYUt6TWN4TVlxbzBjSnNvWQEe80bxqbv2xBRZ7WPWoxqLSMMR3uGYVNsjLfwdEBZ3AkLxS4csdKECjyqO4bk_aem_f_I12-cebyc3KY9Mio5TJg" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
+<div class="portfolio-detail" id="portfolio-4">
+  <h3>Sean Harry B. Cepedoza</h3>
+  <span class="role-badge">Member</span>
+  <div class="intro-content">
+    <div class="intro-picture-container">
+      <img src="Cepedoza.jpeg" alt="Profile picture of Sean Harry B. Cepedoza">
+    </div>
+    <div class="intro-text-content">
+      <p>I'm Sean Harry B. Cepedoza, and I'm glad to be a Member contributing to our portfolio. I enjoy both online gaming and outdoor sports like volleyball.</p>
+      <ul class="personal-info">
+        <li><strong>Number:</strong> 09458304796</li>
+        <li><strong>Age:</strong> 20</li>
+        <li><strong>Birthdate:</strong> 2/10/2005</li>
+        <li><strong>Email:</strong> <a href="mailto:sean.cepedoza@example.com">seancepedoza10@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <h4>My Hobbies, Interests, and Skills</h4>
+  <ul>
+    <li>Playing online games</li>
+    <li>Playing Volleyball</li>
+    <li>Singing</li>
+    <li>Sleeping</li>
+  </ul>
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/15qVpKk4v9/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/nshr_kai" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@nashiro011" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+</div>
 
-                <div class="portfolio-detail" id="portfolio-5">
-                    <h3>Kian Ashley Caoile</h3>
-                    <span class="role-badge">Member</span>
-                    <div class="intro-content">
-                        <div class="intro-picture-container">
-                            <img src="kian.jpeg" alt="Profile picture of Kian Ashley Caoile">
-                        </div>
-                        <div class="intro-text-content">
-                            <p>I am Kian Ashley Caoile, and I am here as a core  Member. My interests include sports like volleyball and spending time on music and gaming.</p>
-                        </div>
-                    </div>
-                    <h4>My Hobbies, Interests, and Skills</h4>
-                    <ul>
-                        <li>Playing online games</li>
-                        <li>Playing volleyball</li>
-                        <li>Singing </li>
-                    </ul>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/19ESGpyGX8/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/kianc_aoile?igsh=NGRvcWxkbTJvZnVh&fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExUHZla1czSVdCQkYzbHFnbgEefaUBUyDmB7DqVtuFUs1SLCe7ybPXP2swpRYv6IwYbbOQbvYe-taxinzQwuQ_aem_iNTAIlt-J7HDVNP0xyeHxg" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@paraknino?_t=ZS-90ydZFgxTlM&_r=1&fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExUHZla1czSVdCQkYzbHFnbgEefaUBUyDmB7DqVtuFUs1SLCe7ybPXP2swpRYv6IwYbbOQbvYe-taxinzQwuQ_aem_iNTAIlt-J7HDVNP0xyeHxg" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
+<div class="portfolio-detail" id="portfolio-5">
+  <h3>Kian Ashley Caoile</h3>
+  <span class="role-badge">Member</span>
+  <div class="intro-content">
+    <div class="intro-picture-container">
+      <img src="kian.jpeg" alt="Profile picture of Kian Ashley Caoile">
+    </div>
+    <div class="intro-text-content">
+      <p>I am Kian Ashley Caoile, and I am here as a core Member. My interests include sports like volleyball and spending time on music and gaming.</p>
+      <ul class="personal-info">
+        <li><strong>Number:</strong> 09703602309</li>
+        <li><strong>Age:</strong> 19</li>
+        <li><strong>Birthdate:</strong> 07/14/2006</li>
+        <li><strong>Email:</strong> <a href="mailto:kian.caoile@example.com">kiancaoile46@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <h4>My Hobbies, Interests, and Skills</h4>
+  <ul>
+    <li>Playing online games</li>
+    <li>Playing volleyball</li>
+    <li>Singing</li>
+  </ul>
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/19ESGpyGX8/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/kianc_aoile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@paraknino" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+</div>
+
+<div class="portfolio-detail" id="portfolio-6">
+  <h3>MS. ABALOS JESSABELLE FLORENDO</h3>
+  <span class="role-badge">Adviser</span>
+  <div class="intro-content">
+    <div class="intro-picture-container">
+      <img src="Maam.jpeg" alt="Profile picture of Adviser">
+    </div>
+    <div class="intro-text-content">
+      <p>Ms. Abalos is our faculty adviser. With experience in instruction and mentorship, she supports our learning and project work.</p>
+      <ul class="personal-info">
+      </ul>
+    </div>
+  </div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/meowchicken.nuggets" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/dyosang.bela" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
 
                 <!-- Adviser portfolio (kept but not shown in members list) -->
                 <div class="portfolio-detail" id="portfolio-6">
@@ -766,6 +873,37 @@
             </div>
         </div>
     </div>
+
+   <footer>
+    &copy; 2025 BSIT 2-H UEP. All Rights Reserved. | Developed by <a href="#">Group 6 Members</a>
+  </footer>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      flex: 1 0 auto; /* grow and fill remaining space */
+    }
+    footer {
+      flex-shrink: 0; /* do not shrink */
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      padding: 20px 10px;
+      border-top: 1px solid var(--border);
+      background: var(--panel);
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
